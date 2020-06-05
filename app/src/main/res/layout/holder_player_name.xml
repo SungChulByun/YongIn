@@ -16,7 +16,7 @@
             android:gravity="center"
             android:textSize="16dp"
             android:text="@{name}"
-            android:background="@drawable/main_button"
+            android:background="@drawable/simple_box"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
