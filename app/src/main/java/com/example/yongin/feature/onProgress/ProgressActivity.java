@@ -7,19 +7,16 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.viewpager2.widget.ViewPager2;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import com.example.yongin.R;
 import com.example.yongin.databinding.ActivityProgressBinding;
-import com.example.yongin.feature.onProgress.game.LexioFragment;
-import com.example.yongin.feature.onProgress.memberSelect.MemberRegisterActivity;
+import com.example.yongin.feature.onProgress.game.lexio.LexioFragment;
 import com.example.yongin.feature.onProgress.memberSelect.MemberSelectFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.yongin.helper.Values.ADD_MEMBER;
 import static com.example.yongin.helper.Values.NEXT;
 import static com.example.yongin.helper.Values.TYPE;
 

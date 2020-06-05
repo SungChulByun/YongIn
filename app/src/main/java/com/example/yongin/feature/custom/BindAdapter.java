@@ -47,7 +47,7 @@ public class BindAdapter {
     @BindingAdapter({"bind:bindLexioMemberList"})
     public static void bindLexioMemberList(MyRecyclerView recyclerView, List<?> list) {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(recyclerView.getContext());
-        linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
+        linearLayoutManager.setOrientation(RecyclerView.HORIZONTAL);
         recyclerView.setLayoutManager(linearLayoutManager);
         if(recyclerView.getAdapter() == null){
             Log.d(TAG, "bind adapter is null ");

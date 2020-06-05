@@ -5,4 +5,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <dimen name="square_holder_width">64dp</dimen>
     <dimen name="square_holder_height">40dp</dimen>
+
+    <dimen name="blank_width">80dp</dimen>
+    <dimen name="name_width">64dp</dimen>
+
 </resources>

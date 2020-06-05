@@ -13,19 +13,20 @@
         >
 
         <com.example.yongin.recyclerView.MyRecyclerView
-            android:id="@+id/lexio_member_recyclerView"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/lexio_player_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/square_holder_width"
+            android:background="@drawable/simple_box"
+            app:layout_constraintTop_toTopOf="parent"
             bind:bindLexioMemberList="@{viewModel.selectedMemberList}"
             />
 
         <com.example.yongin.recyclerView.MyRecyclerView
             android:id="@+id/lexio_score_recyclerView"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            app:layout_constraintLeft_toRightOf="@id/lexio_member_recyclerView"
-            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            bind:layout_constraintTop_toBottomOf="@id/lexio_player_recyclerView"
+            bind:layout_constraintBottom_toBottomOf="parent"
             bind:bindLexioScoreList="@{viewModel.lexioScoreList}"
             />
 

@@ -1,4 +1,4 @@
-package com.example.yongin.feature.onProgress.game;
+package com.example.yongin.feature.onProgress.game.lexio;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,7 +15,6 @@ import com.example.yongin.R;
 import com.example.yongin.databinding.FragmentLexioBinding;
 import com.example.yongin.feature.custom.ProgressFragment;
 import com.example.yongin.feature.onProgress.ProgressViewModel;
-import com.example.yongin.feature.onProgress.memberSelect.MemberSquareAdapter;
 import com.example.yongin.recyclerView.MyRecyclerView;
 
 import static com.example.yongin.helper.Values.LEXIO;
@@ -28,7 +27,7 @@ import static com.example.yongin.helper.Values.LEXIO;
 public class LexioFragment extends ProgressFragment {
     private FragmentLexioBinding binding;
     private ProgressViewModel viewModel;
-    private MyRecyclerView memberRecyclerView;
+    private MyRecyclerView playerNameRecyclerView;
     private MyRecyclerView scoreRecyclerView;
 
     public LexioFragment() {
@@ -64,13 +63,13 @@ public class LexioFragment extends ProgressFragment {
     }
 
     private void setRecyclerView(View view) {
-        memberRecyclerView = view.findViewById(R.id.lexio_member_recyclerView);
-        MemberSquareAdapter memberAdapter = new MemberSquareAdapter();
-        memberRecyclerView.setAdapter(memberAdapter);
+        playerNameRecyclerView = view.findViewById(R.id.lexio_player_recyclerView);
+        PlayerAdapter playerAdapter = new PlayerAdapter();
+        playerNameRecyclerView.setAdapter(playerAdapter);
 
-        scoreRecyclerView = view.findViewById(R.id.lexio_score_recyclerView);
-        LexioScoreAdapter scoreAdapter = new LexioScoreAdapter();
-        scoreRecyclerView.setAdapter(scoreAdapter);
+//        scoreRecyclerView = view.findViewById(R.id.lexio_score_recyclerView);
+//        LexioScoreAdapter scoreAdapter = new LexioScoreAdapter();
+//        scoreRecyclerView.setAdapter(scoreAdapter);
     }
 
     private void setViewModelAndBinding() {
